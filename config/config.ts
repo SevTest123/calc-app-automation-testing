@@ -9,10 +9,11 @@ export const config: Config = {
 
     SELENIUM_PROMISE_MANAGER: false,
 
-    baseUrl: "https://www.google.com",
+    baseUrl: "http://calories-calc.herokuapp.com/",
 
     capabilities: {
         browserName: "chrome",
+        chromeOptions: { args: ['--lang=en-US'] } 
     },
 
     framework: "custom",
